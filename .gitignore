@@ -12,5 +12,16 @@ target/
 *.pem
 *.key
 
+# Eclipse/JDT metadata created by the VS Code Java extension
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+
+# Maven wrapper binary (downloaded on demand) and Initializr help file
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+
 # OS
 .DS_Store
