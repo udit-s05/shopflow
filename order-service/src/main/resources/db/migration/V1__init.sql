@@ -1,0 +1,1 @@
+-- Baseline migration. Tables are added in later days.
