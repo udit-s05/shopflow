@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.time.Instant;
 
-public record OrderCreatedEvent(UUID eventId, UUID orderId, UUID userId, BigDecimal total, Instant occuredAt, List<OrderItemDto> items) {
+public record OrderCreatedEvent(UUID eventId, UUID orderId, UUID userId, BigDecimal total, Instant occurredAt, List<OrderItemDto> items) {
     
     public OrderCreatedEvent {
         items = List.copyOf(items);
