@@ -4,18 +4,18 @@ server:
 spring:
   application:
     name: order-service
-    datasource:
-      url: jdbc:postgresql://localhost:5432/orderdb
-      username: shopflow
-      password: shopflow
-    jpa: 
-      hibernate:
-        ddl-auto: validate
-        open-in-view: false
-    flyway:
-      enabled: true 
-    kafka:
-      bootstrap-servers: localhost:9092
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderdb
+    username: shopflow
+    password: shopflow
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+  kafka:
+    bootstrap-servers: localhost:9092
 eureka:
   client:
     service-url:
