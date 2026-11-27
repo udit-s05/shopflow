@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: nnotification-service
+    name: notification-service
   kafka:
     bootstrap-servers: localhost:9092
   mail:
