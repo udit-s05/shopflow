@@ -3,6 +3,8 @@ package com.shopflow.auth.entity;
 import java.time.Instant;
 import java.util.UUID;
 
+import org.hibernate.validator.constraints.pl.NIP;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -15,11 +17,13 @@ import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "users")
 @Getter
 @Setter
+@NoArgsConstructor
 public class User {
 
     @Id
